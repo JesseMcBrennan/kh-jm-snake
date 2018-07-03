@@ -1,10 +1,10 @@
 const { assert } = require('chai');
 const Block = require('../lib/Block.js');
 
-describe('GamePiece', function() {
+describe('Block', function() {
 
   it('should have properties', function() {
-    const gamePiece = new GamePiece(50, 50, 10, 10, 'rgb(250, 0, 0)', 1)
+    const gamePiece = new Block(50, 50, 10, 10, 'rgb(250, 0, 0)', 1)
     const expectedObj = {
       x: 50,
       y: 50,
@@ -14,14 +14,14 @@ describe('GamePiece', function() {
       dx: 1,
       dxv: .5
     }
-      assert.deepEqual(gamePiece, expectedObj);
+      assert.deepEqual(Block, expectedObj);
   })
 
   it('should be able to collide with other objects', function() {
-    const gamePiece1 = new GamePiece(50, 50, 10, 10, 'rgb(250, 0, 0)', 1);
+    const Block = new GamePiece(50, 50, 10, 10, 'rgb(250, 0, 0)', 1);
     const gamePiece2 = new GamePiece(58, 58, 10, 10, 'rgb(250, 0, 0)', 1);
 
-   const isColliding = gamePiece1.isCollidingWith(gamePiece2);
+   const isColliding = Block.isCollidingWith(gamePiece2);
 
    assert.isTrue(isColliding);
   })
@@ -40,6 +40,6 @@ describe('GamePiece', function() {
 
     gamePiece1.move();
 
-    assert.equal(gamePiece1.x, 50.5)
+    assert.equal(Block.x, 50.5)
   })
 })
