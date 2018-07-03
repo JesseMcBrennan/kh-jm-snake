@@ -1,5 +1,5 @@
 const { assert } = require('chai');
-const GamePiece = require('../lib/GamePiece.js');
+const Block = require('../lib/Block.js');
 
 describe('GamePiece', function() {
 
