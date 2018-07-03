@@ -1,5 +1,52 @@
+@font-face {
+  font-family: Nokian;
+  src: url(/nokian.ttf);
+}
+
+html {
+  box-sizing: border-box;
+  margin: 0;
+  max-width: 1440px;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  background-color: lightgrey;
+  font-family: nokian;
+}
+
+canvas {
+  background-color: #c5e1a5;
+}
+
 #game {
   border: 1px dashed;
-  margin: auto;
   display: block;
+  margin: auto;
+}
+
+.highScoreContainer {
+  display: flex;
+  font-family: nokian;
+  font-size: 32px;
+  height: 99px;
+  left: 7px; 
+  top: 10px; 
+  width: 100%;
+}
+
+.highScoreTxt {
+  margin: 0 0 0 10px;
+  padding: 25px 0 0 375px;
+}
+
+.currentScore {
+  margin: 0 auto;
+  display: inline-block;
+  padding-top: 25px;
+}
+
+.topTen {
+
 }
