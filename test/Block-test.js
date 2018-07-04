@@ -18,7 +18,7 @@ describe('Block', function() {
   })
 
   it('should be able to collide with other objects', function() {
-    const Block = new GamePiece(50, 50, 10, 10, 'rgb(250, 0, 0)', 1);
+    const Block = new Black(50, 50, 10, 10, 'rgb(250, 0, 0)', 1);
     const gamePiece2 = new GamePiece(58, 58, 10, 10, 'rgb(250, 0, 0)', 1);
 
    const isColliding = Block.isCollidingWith(gamePiece2);
@@ -27,8 +27,8 @@ describe('Block', function() {
   })
 
   it('should not collide with objects when they do not overlap', function() {
-    const gamePiece1 = new GamePiece(50, 50, 10, 10, 'rgb(250, 0, 0)', 1);
-    const gamePiece2 = new GamePiece(65, 65, 10, 10, 'rgb(250, 0, 0)', 1);
+    const gamePiece1 = new Block(50, 50, 10, 10, 'rgb(250, 0, 0)', 1);
+    const gamePiece2 = new Blocl(65, 65, 10, 10, 'rgb(250, 0, 0)', 1);
 
    const isColliding = gamePiece1.isCollidingWith(gamePiece2);
 
@@ -36,7 +36,7 @@ describe('Block', function() {
   })
 
   it('should be able to move', function() {
-    const gamePiece1 = new GamePiece(50, 50, 10, 10, 'rgb(250, 0, 0)', 1);
+    const gamePiece1 = new Block(50, 50, 10, 10, 'rgb(250, 0, 0)', 1);
 
     gamePiece1.move();
 

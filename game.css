@@ -1,6 +1,6 @@
 @font-face {
   font-family: Nokian;
-  src: url(/nokian.ttf);
+  src: url(../nokian.ttf);
 }
 
 html {
@@ -17,11 +17,11 @@ body {
 }
 
 canvas {
-  background-color: #c5e1a5;
+  background-color: rgb(155, 188, 15);
 }
 
 #game {
-  border: 1px dashed;
+  border: 1px solid;
   display: block;
   margin: auto;
 }
@@ -37,7 +37,7 @@ canvas {
 }
 
 .highScoreTxt {
-  margin: 0 0 0 10px;
+  margin: 0 0 0 12px;
   padding: 25px 0 0 375px;
 }
 
