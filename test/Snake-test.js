@@ -43,7 +43,7 @@ describe('Snake', () => {
     expect(actualState).to.equal(expectedState);
   })
 
-  it('should be able to move left', () => {
+  it('should be able to move right', () => {
     snake.makeSnake();
     const newTail = snake.body.shift();
     snake.direction = ('right');

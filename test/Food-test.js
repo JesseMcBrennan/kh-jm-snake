@@ -1,5 +1,6 @@
 const { assert } = require('chai');
 const Food = require('../lib/Food.js');
+const Game = require('../lib/Game.js')
 
 describe('Food', function() {
   it('should be a function', function() {
@@ -33,14 +34,15 @@ describe('Food', function() {
   })
 })
 
-// describe('should move when collision with snake occurs', function() {
-//     const food = new Food(50, 50, 20, 20, 'rgb(0, 0, 0')
+describe('should move when collision with snake occurs', function() {
+    const food = new Food(50, 50, 20, 20, 'rgb(0, 0, 0')
 
-//   it('should be a function', function () {
-//     const food1 = new Food(50, 50, 20, 20, 'rgb(0, 0, 0')
+  it('should be a function', function () {
+    const food1 = new Food(50, 50, 20, 20, 'rgb(0, 0, 0')
 
-//     let move = Food.moveFood() 
 
-//     assert.isFunction(Food.moveFood)
-//   })
-// })
+    Game.eatFood() 
+
+    assert.isFunction(Food.moveFood)
+  })
+})
