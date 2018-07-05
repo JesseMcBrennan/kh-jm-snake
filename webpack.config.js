@@ -9,6 +9,7 @@ module.exports = {
   mode: 'development',
   output: {
     path: __dirname,
+    publidPath: "/webpack-demo/"
     filename: "[name].bundle.js"
   },
   module: {
