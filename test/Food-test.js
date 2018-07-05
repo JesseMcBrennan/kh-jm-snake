@@ -10,8 +10,8 @@ describe('Food', function() {
 
   it('should have an x coordinate', function() {
     const food = new Food(50, 50, 10, 10, 'rgb(0, 0, 0')
-
-    assert.equal(food.x, 50);
+    console.log(food.x, '-------')
+    assert.equal(food.x, 40);
   })
 
   it('should have a y coordinate', function() {
