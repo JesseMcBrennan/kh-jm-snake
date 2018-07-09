@@ -32,6 +32,13 @@ describe('Food', function() {
 
     assert.equal(food.width, 20);
   })
+
+  it('should instantiate with a random x and y coordinate within the canvas', () => {
+    const food = new Food(50, 50, 20, 20, 'rgb(0, 0, 0' )
+
+    assert.equal(food.x, < 600)
+    assert.equal(food.y, < 600)
+  }
 })
 
 describe('should move when collision with snake occurs', function() {

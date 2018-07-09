@@ -35,7 +35,7 @@ describe('Snake', () => {
   it('should be able to move left', () => {
     snake.makeSnake();
     const newTail = snake.body.shift();
-    snake.direction = ('left');
+    snake.steerSnake = ('up')
 
     const expectedState = 20;
     const actualState = newTail.x
@@ -46,7 +46,7 @@ describe('Snake', () => {
   it('should be able to move right', () => {
     snake.makeSnake();
     const newTail = snake.body.shift();
-    snake.direction = ('right');
+    snake.steerSnake('right')
 
     const expectedState = 20;
     const actualState = newTail.x
@@ -57,7 +57,7 @@ describe('Snake', () => {
   it('should be able to move up', () => {
     snake.makeSnake();
     const newTail = snake.body[snake.body.length -1]
-    snake.direction = ('up');
+    snake.steerSnake('up')
 
     const expectedState = 20;
     const actualState = newTail.y
@@ -68,7 +68,7 @@ describe('Snake', () => {
   it('should be able to move down', () => {
     snake.makeSnake();
     const newTail = snake.body[snake.body.length -1]
-    snake.direction = ('down');
+    snake.steerSnake('down')
 
     const expectedState = 20;
     const actualState = newTail.y
@@ -76,7 +76,7 @@ describe('Snake', () => {
     expect(actualState).to.equal(expectedState);
   })
 
-  it('should start witha  length of four', () => {
+  it('should start with a length of four', () => {
     snake.makeSnake()
     const expectedState = 4;
     const actualState = snake.body.length
