@@ -20,6 +20,13 @@ canvas {
   background-color: rgb(155, 188, 15);
 }
 
+.img-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
 #game {
   border: 1px solid;
   display: block;
