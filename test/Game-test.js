@@ -49,8 +49,8 @@ describe('Game',() => {
   })
 
   it('should increase the score by 10 when the snake eats food', () => {
-    const snake = new Snake(50, 50, 20, 20, '#000000',0)
-    console.log(game.score)
+    const snake = new Snake()
+
     const eatFood = game.eatFood(food)
 
     const actualState = game.score;
