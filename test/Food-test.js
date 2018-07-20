@@ -1,4 +1,4 @@
-const { assert } = require('chai');
+const { assert } = require('chai');npm
 const Food = require('../lib/Food.js');
 const Game = require('../lib/Game.js')
 
