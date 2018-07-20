@@ -1,6 +1,6 @@
 @font-face {
   font-family: Nokian;
-  src: url(../nokian.ttf);
+  src: url(./lib/nokian.ttf);
 }
 
 html {
